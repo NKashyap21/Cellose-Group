@@ -5,7 +5,7 @@ const Facility = () => {
   return (
     <>
       <Navbar></Navbar>
-      <div>Facility</div>
+      <div></div>
     </>
   );
 }
