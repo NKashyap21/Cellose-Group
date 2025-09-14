@@ -98,55 +98,67 @@ const mtech = [
 const alumni = [
   {
     name: "Dr. Siju C. R.",
-    title: "Post Doctoral",
+    contribution: "Post Doctoral",
   },
   {
     name: "Dr. Shivakalyani Adepu",
-    title: "Post Doctoral (Drug delivery, antimicrobial materials)",
+    contribution: "Post Doctoral (Drug delivery, antimicrobial materials)",
+    current:
+      "Project Investigator, BIRAC Biotechnological Ignition Grant Incubated i-TIC, IIT Hyderabad",
   },
   {
     name: "Dr. Urbashi Mahanta",
-    title: "Ph.D (Wettability tuning, Hydrophobic coatings, antimicrobial surfaces)",
+    contribution:
+      "Ph.D (Wettability tuning, Hydrophobic coatings, antimicrobial surfaces)",
   },
   {
     name: "Dr. Illa Mani Pujitha",
-    title: "Ph.D (Bacterial cellulose based carbon anode for lithium ion batteries)",
+    contribution: "Ph.D (Bacterial cellulose based carbon anode for lithium ion batteries)",
+    current: "Institute Post-doctoral Fellow, IIT Bombay",
   },
   {
     name: "Pintu Maity",
-    title: "Conducting polymer based monolithic actuators",
+    contribution: "M.Tech (conducting polymer based monolithic actuators)",
+    current: "Doctoral candidate, IIT Kharagpur",
   },
   {
     name: "Dr. Divya Anand",
-    title: "Conducting composites",
+    contribution: "M.Tech (conducting composites)",
+    current:
+      "Technological Environment Maintenance Specialist, Nippon Paint Holdings Co Ltd, Japan",
   },
   {
     name: "Dr. Manohar Kakunuri",
-    title: "Post Doc Fellow (electrospun materials for energy, health & environment)",
+    contribution: "Post-Doc Fellow (electrospun materials for energy, health & environment)",
+    current:
+      "Assistant Professor, Dept of Chemical Engineering, National Institute of Technology, Warangal",
   },
   {
     name: "Mr. Palash Chandra Maity",
-    title: "Conducting composites",
+    contribution: "M.Tech (conducting composites)",
+    current: "Pursuing PhD at IIT Roorkee",
   },
   {
     name: "Mr. Debabrata Palai",
-    title: "Depth filters",
+    contribution: "M.Tech (depth filters)",
+    current: "Pursuing PhD at Tokyo Institute of Technology",
   },
   {
     name: "Ms. Anju P. V.",
-    title: "In situ composites for scaffolds, packaging, filtration",
+    contribution: "M.Tech (In situ composites for scaffolds, packaging, filtration)",
+    current: "Offered PhD at Hokkaido University",
   },
   {
     name: "Mukul Choudhary",
-    title: "Microfluidic devices based on bacterial cellulose",
+    contribution: "M.Tech (Microfluidic devices based on bacterial cellulose)",
   },
   {
     name: "Aditya Burla",
-    title: "Antifouling materials based on high entropy alloys",
+    contribution: "M.Tech (Antifouling materials based on high entropy alloys)",
   },
   {
     name: "Apurva Anjan",
-    title: "Bacterial cellulose-based batteries",
+    contribution: "M.Tech (Bacterial cellulose-based batteries)",
   },
 ];
 
