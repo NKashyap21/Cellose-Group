@@ -1,70 +1,74 @@
 const PersonCard = ({ person }) => {
   return (
-    <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition duration-300 flex flex-col h-full">
+    <div className="bg-white rounded-2xl shadow hover:shadow-lg transition duration-300 flex flex-col overflow-hidden border border-gray-100">
+      {/* Image or placeholder */}
       {person.image ? (
         <img
           src={person.image}
           alt={person.name}
-          className="w-full h-56 object-cover rounded-t-lg"
+          className="w-full h-56 object-cover"
         />
       ) : (
-        <div className="w-full h-56 flex items-center justify-center bg-gray-100 rounded-t-lg">
-          <h2 className="text-2xl font-bold text-gray-800 text-center px-2">
-            {person.name}
-          </h2>
+        <div className="w-full h-56 flex items-center justify-center bg-gray-100">
+          <h2 className="text-2xl font-bold text-gray-700">{person.name}</h2>
         </div>
       )}
 
-      <div className="p-4 flex-grow">
-        {/* For Alumni, if there's no image, the name is shown big above */}
+      {/* Info section */}
+      <div className="p-5 flex flex-col flex-grow">
+        {/* Name */}
         {person.image && (
-          <h2 className="text-xl font-semibold text-gray-900">
+          <h2 className="text-xl font-bold text-gray-900 mb-1">
             {person.name}
           </h2>
         )}
 
-        {person.contribution && (
-            <p className="text-sm text-gray-700 mt-2">
-                <span className="font-semibold">Contribution to group: </span>
-                {person.contribution}
-            </p>
-        )}
-
+        {/* Title */}
         {person.title && (
-          <p className="text-sm text-gray-700 mt-1">{person.title}</p>
+          <p className="text-sm text-teal-700 font-medium mb-3 leading-snug">
+            {person.title}
+          </p>
         )}
 
+        {/* About section */}
         {person.description && (
-          <p className="text-sm text-gray-600 mt-2">{person.description}</p>
+          <div className="text-sm text-gray-700 leading-relaxed">
+            <span className="block font-semibold text-black mb-1">About:</span>
+            <p className="text-gray-600">{person.description}</p>
+          </div>
+        )}
+
+        {/* Optional fields */}
+        {person.contribution && (
+          <p className="text-sm text-gray-700 mt-3">
+            <span className="font-semibold">Contribution to group: </span>
+            {person.contribution}
+          </p>
         )}
 
         {person.coSupervisor && (
-          <p className="text-sm text-gray-600 mt-2">
+          <p className="text-sm text-gray-700 mt-3">
             <span className="font-semibold">Co-supervisor: </span>
             {person.coSupervisor}
           </p>
         )}
 
         {person.current && (
-            // <p className="text-sm text-gray-600 mt-2">
-            //     {person.current}
-            // </p>
-            <p className="text-sm text-gray-600 mt-2">
-            <span className="font-semibold">Currently-At: </span>
+          <p className="text-sm text-gray-700 mt-3">
+            <span className="font-semibold">Currently at: </span>
             {person.current}
           </p>
         )}
 
-
         {person.currentAffiliation && (
-          <p className="text-sm text-gray-600 mt-2">
+          <p className="text-sm text-gray-700 mt-3">
             <span className="font-semibold">Current Affiliation: </span>
             {person.currentAffiliation}
           </p>
         )}
 
         {person.sponsor && (
-          <p className="text-sm text-gray-600 mt-2">
+          <p className="text-sm text-gray-700 mt-3">
             <span className="font-semibold">Sponsored by: </span>
             {person.sponsor}
           </p>
